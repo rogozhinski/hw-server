@@ -1,0 +1,97 @@
+/* Modal */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+input, div{
+  font-style: inherit;
+  font-size: inherit;
+}
+
+html {
+  height: 100%;
+}
+
+.main-wrapper{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+.header-wrapper{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding-top: 30px;
+}
+
+.todo-wrapper{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 80px;
+}
+
+.description{
+  font-family: sans-serif;
+}
+
+.field{
+  /* этот дивак нужен как поле, который центруется на страницe и определяет размеры поля, */
+  /* в котором живет наш селект */
+  width: 400px;
+  min-width: 350px;
+}
+
+
+.input { 
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 36px;
+  width: 100%;
+  border: 1px solid #cccccc;
+  padding: 5px 10px;
+  margin-right: 1px;
+}
+
+.input:focus {
+  outline: transparent;
+}
+
+.todo-list{
+  display: flex;
+  flex-direction: column;
+}
+
+.item-wrapper{
+  display: flex;
+  flex-direction: row;
+  height: 36px;
+  border: thin solid #cccccc;
+}
+
+.done-checker{
+  border: 1px solid #cccccc;
+  margin: 4px 0 0 4px;
+  width: 24px;
+  height: 24px;
+}
+
+.item{
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+  border-top-color: transparent;
+}
+
+.delete-button{
+  width: 30px;
+  height: 100%;
+  margin: 3px;
+}
